@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File System Simulator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="logo.png">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+<div class="sidebar-brand">
+  <img src="logo.png">
+<span class="logo-text">
+  <span class="vault">Vault</span><span class="ify">ify</span>
+</span>
+</div>
+    <ul id="tree"></ul>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+<div class="topbar">
+
+  <div class="top-left">
+<div class="brand-text">
+  <span class="title">
+    <span class="vault">Vault</span><span class="ify">ify</span>
+  </span>
+  <span class="tagline">
+    <span class="tag-main">Structure</span><span class="dot">.</span>
+    <span class="tag-main">Store</span><span class="dot">.</span>
+    <span class="tag-main">Simulate</span><span class="dot">.</span>
+  </span>
+</div>
+    <div class="search-box">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input placeholder="Search..." oninput="searchItems()" />
+    </div>
+  </div>
+
+  <div class="top-right">
+    <button onclick="deleteItem()" class="danger-btn">Delete</button>
+    <button onclick="createFolder()">New Folder</button>
+    <button onclick="createFile()">New File</button>
+    <button onclick="undo()">Undo</button>
+    <button onclick="redo()">Redo</button>
+
+    <button onclick="toggleDark()" class="icon-btn">
+      <i id="themeIcon" class="fa-regular fa-moon"></i>
+    </button>
+  </div>
+
+</div>
+
+    <div class="content">
+      <div class="file-list" id="fileList"></div>
+
+      <div class="chart-box">
+          <h3 class="chart-title">File Storage Overview</h3>
+  <canvas id="chart"></canvas>
+        
+      </div>
+    </div>
+
+    <div class="path" id="path"></div>
+
+  </div>
+</div>
+
+<!-- Context Menu -->
+<div id="contextMenu" class="context-menu">
+  <div onclick="createFolder()">
+    <i class="fa-regular fa-folder"></i>
+    <span>New Folder</span>
+  </div>
+
+  <div onclick="createFile()">
+    <i class="fa-regular fa-file"></i>
+    <span>New File</span>
+  </div>
+
+  <div onclick="renameItem()">
+    <i class="fa-solid fa-pen"></i>
+    <span>Rename</span>
+  </div>
+
+  <div onclick="deleteItem()">
+    <i class="fa-regular fa-square-minus"></i>
+    <span>Delete</span>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
