@@ -74,8 +74,8 @@ bash
 
 ### 🎨 Frontend
 - HTML  
-- CSS *(Custom UI + Glassmorphism)*  
-- JavaScript *(Vanilla JS)*  
+- CSS  
+- JavaScript   
 - Chart.js  
 
 ### 🧠 Backend Logic (DSA Model)
