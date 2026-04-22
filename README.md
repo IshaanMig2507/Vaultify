@@ -109,7 +109,7 @@ Vaultify/
 
 ## 👩‍💻 Author
 
-**Jahnvee Srivastava**  
+**Ishaan Miglani**  
 B.Tech CSE | DTU  
 
 
