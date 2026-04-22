@@ -58,17 +58,17 @@ Vaultify is backed by a **tree-based file system design**, implemented in C++ (`
 ### ⚙️ Supported Commands
 
 bash
-mkdir <path>       # Create directories
-touch <name> <size>  # Create file
-ls                 # List contents
-cd <path>          # Change directory
-pwd                # Print current path
-du                 # Disk usage
-find <name>        # Search files/folders
-rm <name>          # Delete node
-undo / redo        # Undo/Redo operations
-save <file>        # Save state
-load <file>        # Load state
+- mkdir <path>       # Create directories
+- touch <name> <size>  # Create file
+- ls                 # List contents
+- cd <path>          # Change directory
+- pwd                # Print current path
+- du                 # Disk usage
+- find <name>        # Search files/folders
+- rm <name>          # Delete node
+- undo / redo        # Undo/Redo operations
+- save <file>        # Save state
+- load <file>        # Load state
 
 ## 🛠 Tech Stack
 
