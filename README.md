@@ -8,7 +8,7 @@ It mimics real-world file system operations while visualizing storage usage and 
 ---
 
 ## 🌐 Live Demo
-🔗 https://Jahnveee.github.io/vaultify/
+🔗 [https://IshaanMig2507.github.io/vaultify/](https://ishaanmig2507.github.io/Vaultify/)
 
 ---
 
