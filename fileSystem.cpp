@@ -223,8 +223,8 @@ void clear(Node* node) {
 }
 
 void load_cmd(string filename) {
-    // 🔥 clear old system
-    clear(root);
+    
+    clear(root);      // clear old system
 
     root = new Node("/");
     curr = root;
