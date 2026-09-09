@@ -190,9 +190,12 @@ public:
         auto [parent, subtree] = redoStack.top();
         redoStack.pop();
 
-        parent->children.erase(subtree->name);
+        Node* undoCopy = clone(subtree);
 
-        undoStack.push({parent, clone(subtree)});
+        parent->children.erase(subtree->name);
+        deleteNode(subtree);
+
+        undoStack.push({parent, undoCopy});
     }
 
     // ---------- SAVE / LOAD ----------
